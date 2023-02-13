@@ -1,0 +1,295 @@
+body {
+  align-items: center;
+  margin: 0;
+  background-color: #f0eeed;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 0;
+  z-index: 100;
+  background-color: #609ea2;
+}
+
+.title-navbar {
+  color: #f0eeed;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#img-profile {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 10vw;
+}
+
+#img-profile2 {
+  display: none;
+}
+
+/* PERFIL. Sección de introducción */
+
+#profile {
+  display: flex;
+  margin: 0 5%;
+  justify-content: space-around;
+}
+
+.name {
+  color: #c92c6d;
+}
+
+h1 {
+  text-align: start;
+  font-size: 2em;
+  color: #332c39;
+}
+
+#contact-button {
+  display: flex;
+  justify-content: center;
+  padding-right: 30%;
+}
+
+#text-contact {
+  font-size: 1.5em;
+  display: block;
+}
+
+#contact-button a {
+  text-decoration: none;
+  background-color: #c92c6d;
+  color: white;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media h3 {
+  display: none;
+}
+
+.social-media-icons {
+  max-width: 10vw;
+  margin: 5px 0;
+}
+
+.social-media a span {
+  display: none;
+  text-decoration: none;
+
+}
+
+
+/* STACKS */
+
+
+#stacks h2,
+#projects h2 {
+  margin-top: 16vh;
+  margin-bottom: 3vh;
+  margin-left: 7vw;
+}
+
+#stacks-img {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.stacks-icons {
+  margin-top: 2vh;
+  width: 26vw;
+  filter: brightness(0.5) saturate(0.5) contrast(1.2) blur(0px);
+  max-width: 200px;
+}
+
+.stacks-icons:hover {
+  filter: none;
+}
+
+/* PROYECTOS. Diseño de tarjetas para agregar proyectos futuros. */
+
+.project-cards{
+    display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 6vh auto;
+  background-color: #332c39;
+  border-radius: 20px;
+  max-width: 500px;
+}
+
+.imgcard {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container-imgcard {
+  justify-content: end;
+  border-radius: 20px;
+}
+
+.project-icons-card {
+  display: flex;
+  justify-content: end;
+  padding: 0 2vh;
+}
+
+.project-icons {
+  width: 10vw;
+  margin: 5px 0;
+  max-width: 60px;
+}
+
+.name-description {
+  margin: 1vh;
+  padding: 0 2vh;
+}
+
+.description-card {
+  margin: 1vh;
+  padding: 0 2vh;
+  color: #f0eeed;
+}
+
+
+/* FOOTER */
+
+#footer {
+  display: flex;
+  background-color: #609ea2;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6vh;
+}
+
+#footer h5 {
+  text-decoration: none;
+  color: #f0eeed;
+
+  font-size: 1.6em;
+  margin: 2vh;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #f0eeed;
+  font-size: 0.8em;
+}
+
+
+/* SECCIÓN HOVERS */
+
+
+
+#contact-button a:hover {
+    background-color: #f0eeed;
+  }
+
+  
+  #text-contact:hover {
+    color: #c92c6d;
+  }
+
+
+.title-navbar:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  #img-profile {
+    display: none;
+  }
+
+  #profile {
+    align-items: center;
+  }
+
+  #img-profile2 {
+    display: flex;
+    border: 8px solid white;
+    border-radius: 50%;
+    max-width: 28vw;
+    height: 28vh;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin: 8vh 8vw 4vh 2vw;
+    display: block;
+  }
+
+  #text-contact {
+    font-size: 2em;
+    display: block;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media a{
+
+    text-decoration: none;
+    
+  }
+
+  .social-media a span {
+
+    display: block;
+    text-align: center;
+    font-size: xx-small;
+    font-size: 1em;
+  }
+
+  .social-media-icons {
+    max-width: 6vw;
+    margin: 3vh 0 0 0;
+  }
+
+
+}
+
+
+@media (min-width: 1024px){
+
+    #text-contact {
+        font-size: 2.5em;
+        display: block;
+      }
+}
